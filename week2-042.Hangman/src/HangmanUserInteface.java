@@ -14,37 +14,13 @@ public class HangmanUserInteface {
         System.out.println("");
         printMenu();
         System.out.println("");
-        System.out.println("Type a command:");
+
         // PROGRAM YOUR SOLUTION HERE
-while (hangman.gameOn()){
-   // System.out.println("Type a command");
-    String command = reader.nextLine();
-    if (command.equals("quit")){
-        break;
-    }
-    else if (command.equals("status")){
-        hangman.printStatus();
-        System.out.println("");
-    }
-    else if(command.length() == 1){
-        hangman.guess(command);
-       // hangman.printMan();
-       // hangman.printWord();
-       break;
-    }
-    else if (command.isEmpty()){
-        printMenu();
-    }
-    hangman.printMan();
-    hangman.printWord();
-    System.out.println("");
-    System.out.println("Type a command:");
-}
+
 
         System.out.println("Thank you for playing!");
     }
 
-   
     public static void printMenu() {
         System.out.println(" * menu *");
         System.out.println("quit   - quits the game");
